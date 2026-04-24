@@ -1,0 +1,21 @@
+
+let n1=prompt("entrez la premier nombre :");
+let n2=prompt("entrez le deuxieme nombre :");
+n1=parseFloat(n1);
+n2=parseFloat(n2);
+if (isNaN(n1)|| isNaN(n2)){
+    console.log("erreur:entrez des nombres valides :" );
+}else{
+    let somme = n1+n2;
+    let difference =n1-n2;
+    let produit =n1*n2;
+    if (n2!==0){
+        let quotient = n1/n2;
+        console.log("somme :"+somme);
+        console.log("difference :"+difference);
+        console.log("produit:"+produit);
+        console.log("quotient :"+quotient);
+    }else{
+        console.log("erreur : division par 0 impossible ");
+    }
+}
